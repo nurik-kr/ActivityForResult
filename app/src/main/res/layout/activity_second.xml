@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <CheckBox
+    android:id="@+id/cb1"
+    android:text="  Дневник памяти"
+    android:textSize="25dp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="80dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:text="  Кто я?"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:text="  Рельный футбол"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/cb2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btEnd"
+        app:layout_constraintTop_toBottomOf="@+id/cb3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="НАЗАД"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
